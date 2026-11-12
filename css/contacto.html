@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <meta
+      name="description"
+      content="Página de contacto de la web Andrea Rubio"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/kh4aiin8/image/upload/v1793180530/Pastel_Pencil_Portrait_with_Blunt_Bangs.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header-content">
+        <div id="inicio" class="logo">
+          <p><a href="index.html">AR</a></p>
+        </div>
+
+        <nav class="nav" id="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#About" class="nav-item">About</a>
+            </li>
+            <li>
+              <a href="#Skills" class="nav-item">Skills</a>
+            </li>
+            <li>
+              <a href="#Cheatsheets" class="nav-item">Cheatsheets</a>
+            </li>
+            <li>
+              <a href="#Recursos" class="nav-item">Recursos</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Menú de navegación"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <main>
+      <h1 class="main-contacto">Formulario de contacto</h1>
+      <section>
+        <h2 class="main-contacto">Contáctame</h2>
+
+        <form action="#" method="POST" class="form">
+          <fieldset class="caja">
+            <legend class="legend">Datos personales</legend>
+            <div class="info">
+              <label for="nombre">Nombre completo:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Andrea Rubio"
+                required
+                class="caja"
+              />
+            </div>
+            <div class="info">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                class="caja"
+              />
+            </div>
+            <div class="info">
+              <label for="asunto">Asunto:</label>
+              <input
+                type="text"
+                id="asunto"
+                name="asunto"
+                required
+                class="caja"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset class="caja">
+            <legend class="legend">Mensaje</legend>
+            <label for="mensaje">Escribe aquí:</label>
+            <div class="info">
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                cols="40"
+                rows="5"
+                required
+                class="caja"
+              ></textarea>
+            </div>
+            <button class="button" type="submit">Enviar formulario</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
