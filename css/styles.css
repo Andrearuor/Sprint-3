@@ -24,7 +24,6 @@ body {
   padding-top: 80px;
   font-size: var(--font-size);
   min-height: 100vh;
-  display: flex;
   margin: 0;
 
 
@@ -115,7 +114,6 @@ h4 {
 }
 
 .sub {
-  width: 10;
   height: 2px;
   margin: 10px;
   background-color: var(--color-accent);

@@ -1,219 +1,235 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-     <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andrea Rubio's Web</title>
 
-    <meta
-      name="description"
-      content="Página web del feature sprint de Andrea Rubio"
-    />
+    <meta name="description" content="Página web del feature sprint de Andrea Rubio" />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link
-      rel="icon"
-      href="https://res.cloudinary.com/kh4aiin8/image/upload/v1793180530/Pastel_Pencil_Portrait_with_Blunt_Bangs.png"
-      type="image/x-icon"
-    />
+    <link rel="icon"
+        href="https://res.cloudinary.com/kh4aiin8/image/upload/v1793180530/Pastel_Pencil_Portrait_with_Blunt_Bangs.png"
+        type="image/x-icon" />
 </head>
+
 <body>
     <header class="header">
-      <div class="container header-content">
-        <div id="inicio" class="logo">
-          <p><a href="index.html">AR</a></p>
+        <div class="container header-content">
+            <div id="inicio" class="logo">
+                <p><a href="index.html">AR</a></p>
+            </div>
+
+            <nav class="nav" id="nav">
+                <ul class="nav-list">
+                    <li>
+                        <a href="about.html" class="nav-item">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#Skills" class="nav-item">Skills</a>
+                    </li>
+                    <li>
+                        <a href="index.html#Cheatsheets" class="nav-item">Cheatsheets</a>
+                    </li>
+                    <li>
+                        <a href="index.html#Recursos" class="nav-item">Recursos</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="nav-item">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="hamburger" id="hamburger" aria-label="Menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-
-        <nav class="nav" id="nav">
-          <ul class="nav-list">
-            <li>
-              <a href="about.html" class="nav-item">About</a>
-            </li>
-            <li>
-              <a href="#Skills" class="nav-item">Skills</a>
-            </li>
-            <li>
-              <a href="#Cheatsheets" class="nav-item">Cheatsheets</a>
-            </li>
-            <li>
-              <a href="#Recursos" class="nav-item">Recursos</a>
-            </li>
-            <li>
-              <a href="contacto.html" class="nav-item">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-
-        <button
-          class="hamburger"
-          id="hamburger"
-          aria-label="Menú de navegación"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
     </header>
 
     <main class="main-about">
         <div class="cabecera">
             <h1 id="h1About">Sobre mí</h1>
             <p>CV completo, experiencia, educación y forma de trabajar</p>
-            </div>
+        </div>
         <section class="biografia">
-            <img class="selfie" src="https://res.cloudinary.com/kh4aiin8/image/upload/v1794483866/Estudiante_Fullstack_en_Polaroid.png" alt="imagen de una chica con el pelo corto y flequillo con un jersey de cuello alto rosa y el texto estudiante fullstack abajo">
-        <div class="cabecera-text">
-        <h2>Andrea Rubio Ortega</h2>
-         <h3 id="h3About">Estudiante Fullstack & Editoria Literaria</h3>
-             <p>Soy Andrea Rubio Ortega, graduada en Literatura Comparada y con formación de posgrado en Edición y Gestión Editorial y en Gestión del Patrimonio Lingüístico y Literario Español. 
-            Cuento con experiencia en el sector editorial, especialmente en corrección ortotipográfica y de estilo, redacción, revisión de textos y desarrollo de proyectos editoriales. He colaborado con editoriales como EUG, UMA, Letras & Poesía y Esdrújula Ediciones, además de trabajar como correctora y redactora freelance. 
-            Me apasiona el mundo del libro, el cuidado del lenguaje y todo lo relacionado con la edición y la creación literaria.</p>
-    
-    
-        <div class="about-button">
-            <button class="button" target="_blank">Linkedin</button>
-            <button class="button" target="_blank">GitHub</button>
-            <button class="button" href="contacto.html">Contacto</button>
+            <img class="selfie"
+                src="https://res.cloudinary.com/kh4aiin8/image/upload/v1794483866/Estudiante_Fullstack_en_Polaroid.png"
+                alt="imagen de una chica con el pelo corto y flequillo con un jersey de cuello alto rosa y el texto estudiante fullstack abajo">
+            <div class="cabecera-text">
+                <h2>Andrea Rubio Ortega</h2>
+                <h3 id="h3About">Estudiante Fullstack & Editoria Literaria</h3>
+                <p>Soy Andrea Rubio Ortega, graduada en Literatura Comparada y con formación de posgrado en Edición y
+                    Gestión Editorial y en Gestión del Patrimonio Lingüístico y Literario Español.
+                    Cuento con experiencia en el sector editorial, especialmente en corrección ortotipográfica y de
+                    estilo, redacción, revisión de textos y desarrollo de proyectos editoriales. He colaborado con
+                    editoriales como EUG, UMA, Letras & Poesía y Esdrújula Ediciones, además de trabajar como correctora
+                    y redactora freelance.
+                    Me apasiona el mundo del libro, el cuidado del lenguaje y todo lo relacionado con la edición y la
+                    creación literaria.</p>
+
+
+                <div class="section-button">
+                    <a class="button" href="https://linkedin.com" target="_blank" rel="noopener">Linkedin</a>
+                    <a class="button" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                    <a class="button" href="contacto.html">Contacto</a>
+                </div>
             </div>
-        </div>    
-       </section>
-    
-           
-    <section class="experiencia">
-        <h2>Experiencia Profesional</h2>
+        </section>
 
-        <ul class="card-container">
-            <li class="card">
-                <div class="card-content">
-                    <h3>Técnico editorial</h3>
-                    <h4>2025-2026, Ediciones Camelot</h4>
-                    <p>Maquetación editorial</p>
-                    <ul class="card-list">
-                        <li>Manejo de software editorial. Uso avanzado de herramientas como Adobe InDesign y, para digital, Sigil, Calibre o InDesign EPUB.</li>
-                        <li>Corrección ortotipográfica y de estilo.</li>
-                        <li>Control de calidad editorial. Revisión final de pruebas (galeras, ferros, PDF) para garantizar coherencia visual y textual antes de impresión o publicación digital.</li>
-                    </ul>
-                </div>
-            </li>
 
-            <li class="card">
-                <div class="card-content">
-                     <h3> Copywriter Freelance</h3>
-                     <h4>2024, AfiliaGo</h4>
-                    <p>Redacción de urls personalizadas</p>
-                    <ul class="card-list">
-                        <li>Corrección y adecuación: garantizar precisión, coherencia y calidad de contenido. </li>
-                        <li>Escritura persuasiva: redactar mensajes convincentes que capturen la atención del público</li>
-                        <li>Conocimiento de marketing y posicionamiento SEO: aplicar efectivamente los principios básicos</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-content">
-                     <h3>Editorial Manager</h3>
-                     <h4>2022-2024, Letras & Poesía</h4>
-                    <p> Gestión de proyectos: capacidad de planificar, coordinar y supervisar proyectos editoriales</p>
-                    <ul class="card-list">
-                        <li>Gestión de equipos: habilidades de liderazgo y motivación en equipos de escritores, correctores, diseñadores y demás profesionales</li>
-                        <li>Conocimiento del mercado editorial: entendimiento del mercado actual, tendencias, competidores y preferencias del público objetivo</li> 
-                        <li>Gestión de tiempos: administración del tiempo de manera eficiente para cumplir con los plazos</li>
-                    </ul>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-content">
-                     <h3>Correctora Freelance</h3>
-                     <h4>2019-2022, Lowpost</h4>
-                    <p>Corrección ortotipográfica de blogs y portales web</p>
-                    <ul class="card-list">
-                        <li>Conocimiento de estilos de escritura y guías de estilo</li>
-                        <li>Capacidad de trabajar con diferentes tipos de texto</li>
-                        <li>Atención al detalle</li>
-                    </ul>
-                </div>
-            </li>
-           
-        </ul>
-    </section>
-    <section class="experiencia">
-        <h2>Educación</h2>
-        <ul class="card-container">
-            <li class="card">
-                <div class="card-content">
-                    <h3>The Bridge: Bootcamp Fullstack + IA</h3>
-                    <h4>2026-2027</h4>
-                    <p>Formación intensiva en desarrollo fullstack y desarrollo con IA</p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-content">
-                    <h3>Euroinnova International Online Education: Máster Edición y Gestión Editorial</h3>
-                    <h4>2023-2024</h4>
-                    <p>Formación especializada en </p>
-                </div>
-            </li>
-            <li class="card">
-                <div class="card-content">
-                    <h3>Universidad dde Málaga: Máster Gestión del Patrimonio Lingüístico y Literario Español</h3>
-                    <h4>2021-2022</h4>
-                    <p>Formación especializada en </p>
-                </div> </li>
-            <li class="card">
-                <div class="card-content">
-                    <h3>Univerdidad de Granada: Literaturas Comparadas</h3>
-                    <h4>2016-2020</h4>
-                    <p>Grado universitario en estudios lingüísticos y literarios</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-    <section>
-        <h2>Valores Personales</h2>
-        <ul class="card-container2">
-            <li class="card2">
-                <h3>Creatividad e inovación</h3>
-                <p>capacidad para generar ideas originales y buscar soluciones creativas, tanto en proyectos editoriales como en el desarrollo tecnológico.</p>
-            </li>
-            <li class="card2">
-                <h3>Rigor y precisión</h3>
-                <p>atención al detalle, cuidado por la calidad y búsqueda de la excelencia, tanto en la corrección de textos como en la programación.</p>
-            </li>
-            <li class="card2">
-                <h3> Curiosidad y aprendizaje continuo</h3>
-                <p>interés por adquirir nuevos conocimientos, explorar herramientas y evolucionar profesionalmente en distintos ámbitos.</p>
-            </li>
-            <li class="card2">
-                <h3>Pensamiento analítico</h3>
-                <p>capacidad para interpretar información, identificar problemas y encontrar soluciones mediante la lógica y el razonamiento.</p>
-            </li>
-            <li class="card2">
-                <h3>Sensibilidad y comunicación</h3>
-                <p>facilidad para comprender el valor del lenguaje, transmitir ideas y crear experiencias digitales claras, accesibles y cuidadas.</p>
-            </li>
-            <li class="card2">
-                <h3>Adaptabilidad y versatilidad</h3>
-                <p>capacidad para desenvolverse en disciplinas diferentes, combinar conocimientos humanísticos y tecnológicos y afrontar nuevos retos.</p>
-            </li>
-            <li class="card2">
-                <h3>Compromiso y perseverancia</h3>
-                <p>implicación en cada proyecto, responsabilidad y constancia para alcanzar resultados de calidad.</p>
-            </li>
-        </ul>
-    </section>
+        <section class="experiencia">
+            <h2>Experiencia Profesional</h2>
+
+            <ul class="card-container">
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Técnico editorial</h3>
+                        <h4>2025-2026, Ediciones Camelot</h4>
+                        <p>Maquetación editorial</p>
+                        <ul class="card-list">
+                            <li>Manejo de software editorial. Uso avanzado de herramientas como Adobe InDesign y, para
+                                digital, Sigil, Calibre o InDesign EPUB.</li>
+                            <li>Corrección ortotipográfica y de estilo.</li>
+                            <li>Control de calidad editorial. Revisión final de pruebas (galeras, ferros, PDF) para
+                                garantizar coherencia visual y textual antes de impresión o publicación digital.</li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="card">
+                    <div class="card-content">
+                        <h3> Copywriter Freelance</h3>
+                        <h4>2024, AfiliaGo</h4>
+                        <p>Redacción de urls personalizadas</p>
+                        <ul class="card-list">
+                            <li>Corrección y adecuación: garantizar precisión, coherencia y calidad de contenido. </li>
+                            <li>Escritura persuasiva: redactar mensajes convincentes que capturen la atención del
+                                público</li>
+                            <li>Conocimiento de marketing y posicionamiento SEO: aplicar efectivamente los principios
+                                básicos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Editorial Manager</h3>
+                        <h4>2022-2024, Letras & Poesía</h4>
+                        <p> Gestión de proyectos: capacidad de planificar, coordinar y supervisar proyectos editoriales
+                        </p>
+                        <ul class="card-list">
+                            <li>Gestión de equipos: habilidades de liderazgo y motivación en equipos de escritores,
+                                correctores, diseñadores y demás profesionales</li>
+                            <li>Conocimiento del mercado editorial: entendimiento del mercado actual, tendencias,
+                                competidores y preferencias del público objetivo</li>
+                            <li>Gestión de tiempos: administración del tiempo de manera eficiente para cumplir con los
+                                plazos</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Correctora Freelance</h3>
+                        <h4>2019-2022, Lowpost</h4>
+                        <p>Corrección ortotipográfica de blogs y portales web</p>
+                        <ul class="card-list">
+                            <li>Conocimiento de estilos de escritura y guías de estilo</li>
+                            <li>Capacidad de trabajar con diferentes tipos de texto</li>
+                            <li>Atención al detalle</li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+        <section class="experiencia">
+            <h2>Educación</h2>
+            <ul class="card-container">
+                <li class="card">
+                    <div class="card-content">
+                        <h3>The Bridge: Bootcamp Fullstack + IA</h3>
+                        <h4>2026-2027</h4>
+                        <p>Formación intensiva en desarrollo fullstack y desarrollo con IA</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Euroinnova International Online Education: Máster Edición y Gestión Editorial</h3>
+                        <h4>2023-2024</h4>
+                        <p>Formación especializada en edición digital y tradicional</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Universidad dde Málaga: Máster Gestión del Patrimonio Lingüístico y Literario Español</h3>
+                        <h4>2021-2022</h4>
+                        <p>Formación especializada en gestión patrimonial</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <div class="card-content">
+                        <h3>Univerdidad de Granada: Literaturas Comparadas</h3>
+                        <h4>2016-2020</h4>
+                        <p>Grado universitario en estudios lingüísticos y literarios</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Valores Personales</h2>
+            <ul class="card-container2">
+                <li class="card2">
+                    <h3>Creatividad e inovación</h3>
+                    <p>capacidad para generar ideas originales y buscar soluciones creativas, tanto en proyectos
+                        editoriales como en el desarrollo tecnológico.</p>
+                </li>
+                <li class="card2">
+                    <h3>Rigor y precisión</h3>
+                    <p>atención al detalle, cuidado por la calidad y búsqueda de la excelencia, tanto en la corrección
+                        de textos como en la programación.</p>
+                </li>
+                <li class="card2">
+                    <h3> Curiosidad y aprendizaje continuo</h3>
+                    <p>interés por adquirir nuevos conocimientos, explorar herramientas y evolucionar profesionalmente
+                        en distintos ámbitos.</p>
+                </li>
+                <li class="card2">
+                    <h3>Pensamiento analítico</h3>
+                    <p>capacidad para interpretar información, identificar problemas y encontrar soluciones mediante la
+                        lógica y el razonamiento.</p>
+                </li>
+                <li class="card2">
+                    <h3>Sensibilidad y comunicación</h3>
+                    <p>facilidad para comprender el valor del lenguaje, transmitir ideas y crear experiencias digitales
+                        claras, accesibles y cuidadas.</p>
+                </li>
+                <li class="card2">
+                    <h3>Adaptabilidad y versatilidad</h3>
+                    <p>capacidad para desenvolverse en disciplinas diferentes, combinar conocimientos humanísticos y
+                        tecnológicos y afrontar nuevos retos.</p>
+                </li>
+                <li class="card2">
+                    <h3>Compromiso y perseverancia</h3>
+                    <p>implicación en cada proyecto, responsabilidad y constancia para alcanzar resultados de calidad.
+                    </p>
+                </li>
+            </ul>
+        </section>
     </main>
 
 
-
+    <footer>
+        <p>&copy; 2026 Mi sitio web - Andrea Rubio</p>
+        <p>
+            Contacto:
+            <a href="mailto:andrearubioortega@outlook.com">andrearubioortega@outlook.com</a>
+        </p>
+    </footer>
 
 </body>
 
-<footer>
-  <p>&copy; 2026 Mi sitio web - Andrea Rubio</p>
-      <p>
-        Contacto:
-        <a href="mailto:andrearubioortega@outlook.com">andrearubioortega@outlook.com</a>
-      </p>
-</footer>
+
 </html>
