@@ -357,6 +357,74 @@ footer {
   margin-top: 20px;
 }
 
+/* SKILLS*/
+
+#Skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.card-skill{
+  min-height: 200px;
+  width: 200px;
+  padding: 10px;
+  background-color: var(--color-background-card);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  border-left: var(--color-primary) solid 4px;
+  border-radius: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.skill-header {
+  margin: 10px;
+}
+
+.skill-icon {
+  width: auto;
+  height: 75px;
+}
+
+.skill-name {
+  font-weight: bold;
+  margin-top: 10px;
+  color: var(--color-text);
+}
+
+.skill-level {
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 12px;
+  font-style: uppercase;
+}
+
+.skill-description {
+  font-size: 14px;
+  margin-top: 10px;
+  color: var(--color-text);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px; 
+  margin-top: auto;
+}
+
+
+.skill-tag {
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
 
 /* 13. ANIMACIONES*/
 

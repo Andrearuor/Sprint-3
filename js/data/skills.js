@@ -1,7 +1,7 @@
  export const skills = [
      {
     name: "HTML5",
-    icon: "",
+    icon: "https://cdn.simpleicons.org/html5/E34F26", 
     state: "dominada",
     level: "avanzado",
     description: "Estructura semántica y accesible para la creación de páginas web.",
@@ -9,73 +9,73 @@
   },
   {
     name: "CSS3",
-    icon: "",
-    state: "no dominada",
-    level: "intermedio",
+    icon: "https://cdn.simpleicons.org/css/663399",
+    state: "dominada",
+    level: "INTERMEDIO",
     description: "Diseño, maquetación y personalización visual de interfaces web.",
     tags: ["Styling", "Responsive Design", "Flexbox"]
   },
   {
     name: "JavaScript",
-    icon: "",
-    state: "no dominada",
-    level: "principiante",
+    icon: "https://cdn.simpleicons.org/javascript/F7DF1E",
+    state: "dominada",
+    level: "PRINCIPIANTE",
     description: "Programación de interactividad, funcionalidades y comportamiento dinámico en páginas web.",
     tags: ["Programming", "DOM", "Interactivity"]
   },
   {
     name: "InDesign",
-    icon: "",
-    state: "dominada",
-    level: "avanzado",
+    icon: "https://cdn.simpleicons.org/indesign/000000",
+    state: "no dominada",
+    level: "AVANZADO",
     description: "Maquetación editorial y creación de publicaciones digitales e impresas.",
     tags: ["Editorial Design", "Layout", "Typography"]
   },
   {
     name: "Sigil",
-    icon: "",
-    state: "dominada",
-    level: "intermedio",
+    icon: "https://cdn.simpleicons.org/sigil/000000",
+    state: "no dominada",
+    level: "INTERMEDIO",
     description: "Edición y creación de libros electrónicos en formato EPUB mediante código y herramientas visuales.",
     tags: ["EPUB", "Ebooks", "Digital Publishing"]
   },
   {
     name: "Figma",
-    icon: "",
+    icon: "https://cdn.simpleicons.org/figma/F0F0F0",
     state: "no dominada",
-    level: "intermedio",
+    level: "INTERMEDIO",
     description: "Diseño de interfaces, prototipos interactivos y planificación de experiencias de usuario.",
     tags: ["UI Design", "Prototyping", "UX"]
   },
   {
     name: "WordPress",
-    icon: "",
+    icon: "https://cdn.simpleicons.org/wordpress/21759B",
     state: "no dominada",
-    level: "intermedio",
+    level: "INTERMEDIO",
     description: "Creación y gestión de sitios web mediante un sistema de gestión de contenidos.",
     tags: ["CMS", "Web Design", "Content Management"]
   },
   {
     name: "Photoshop",
-    icon: "",
-    state: "dominada",
-    level: "principiante",
+    icon: "https://cdn.simpleicons.org/photoshop/31A8FF",
+    state: "no dominada",
+    level: "PRINCIPIANTE",
     description: "Edición, retoque fotográfico y creación de recursos gráficos para proyectos digitales.",
     tags: ["Image Editing", "Graphic Design", "Retouching"]
   },
   {
     name: "Illustrator",
-    icon: "",
+    icon: "https://cdn.simpleicons.org/illustrator/000000",
     state: "no dominada",
-    level: "principiante",
+    level: "PRINCIPIANTE",
     description: "Creación y edición de ilustraciones, iconos, logotipos y gráficos vectoriales.",
     tags: ["Vector Graphics", "Illustration", "Branding"]
   },
   {
     name: "Git & GitHub",
-    icon: "",
+    icon: "https://cdn.simpleicons.org/git/ F15034",
     state: "dominada",
-    level: "intermedio",
+    level: "INTERMEDIO",
     description: "Control de versiones, seguimiento de cambios y almacenamiento de proyectos de desarrollo.",
     tags: ["Version Control", "Repositories", "Collaboration"]
   }
