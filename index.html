@@ -10,8 +10,8 @@
       name="description"
       content="Página web del feature sprint de Andrea Rubio"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/css/reset.css" />
+    <link rel="stylesheet" href="./css/css/styles.css" />
     <link
       rel="icon"
       href="https://res.cloudinary.com/kh4aiin8/image/upload/v1793180530/Pastel_Pencil_Portrait_with_Blunt_Bangs.png"
@@ -19,30 +19,8 @@
     />
   </head>
   <body>
-    <header class="header">
-      <div class="container header-content">
-        <div id="inicio" class="logo">
-          <p><a href="index.html">AR</a></p>
-        </div>
-        <button
-          class="hamburger"
-          id="hamburger"
-          aria-label="Menú de navegación"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <nav id="nav" class="nav" >
-           <!-- <a href="#About" class="nav-item subrayado-shorthand">About</a> -->
-              <a href="about.html" class="nav-item">About</a>
-              <a href="#Skills" class="nav-item">Skills</a>
-              <a href="#Cheatsheets" class="nav-item">Cheatsheets</a>
-              <a href="#Recursos" class="nav-item">Recursos</a>
-              <a href="contacto.html" class="nav-item">Contacto</a>
-        </nav>
-      </div>
-    </header>
+    <header id = "header" class="header"></header>
+
 
     <main class="main">
       <div class="container hero-container">
@@ -68,10 +46,10 @@
         </p>
 
         <div class="section-button">
-          <button class="button" target="_blank">Linkedin</button>
-          <button class="button" target="_blank">GitHub</button>
-          <button class="button" href="contacto.html">Contacto</button>
-        </div>
+                    <a class="button" href="https://linkedin.com" target="_blank" rel="noopener">Linkedin</a>
+                    <a class="button" href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+                    <a class="button" href="contacto.html">Contacto</a>
+                </div>
       </section>
 
       <section id="Skills" class="section">
@@ -86,14 +64,9 @@
         <h2>Recursos</h2>
       </section>
     </main>
-<footer>
-  <p>&copy; 2026 Mi sitio web - Andrea Rubio</p>
-      <p>
-        Contacto:
-        <a href="mailto:andrearubioortega@outlook.com">andrearubioortega@outlook.com</a>
-      </p>
-</footer>
+<footer id="footer"></footer>
     <!-- Archivo JS requerido sin contenido por el momento -->
-    <script src="./js/main.js"></script>
+    <script type="module" src="./js/main.js"></script>
+     <!-- <script type="module" src="./js/utils/darkMode.js"></script> -->
   </body>
 </html>

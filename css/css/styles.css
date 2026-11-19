@@ -1,80 +1,42 @@
+/*  1. IMPORTACIÓN DE FUENTES Y VARIABLES GLOBALES */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 :root {
-  --color-primary: #fad1f7;
-  --color-secondary: #d4a5f3;
-  --color-text: #ada5f3;
-  --color-button: #b66cef;
-  --color-white: #fbf7fe;
-  --color-accent: #8b5cf6;
+  --color-primary: #263A35;
+  --color-secondary: #E8DED0;
+  --color-text: #343434;
+  --color-button: #925C48;
+  --color-background: #F8F6F1;
+  --color-background-card: #f9f2e9;
+  --color-accent: #C58B72;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+
   --header-height: 70px;
   --button-height: 14px;
   --max-width: 1100px;
   --font-width: 80px;
   --font-size: 14px;
 }
+
+
+/* 2. ESTILOS GENERALES Y ESTRUCTURA PRINCIPAL*/
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--color-text);
-  background-color: var(--color-white);
+  background-color: var(--color-background);
   line-height: 1.5;
   display: flex;
   flex-direction: column;
   padding-top: 80px;
   font-size: var(--font-size);
-}
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: var(--header-height);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: var(--color-white);
+  min-height: 100vh;
+  margin: 0;
 }
 
-section {
-  margin-top: 16px;
-}
-.logo {
-  font-weight: bold;
-  margin: 20px;
-}
-.container {
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 100%;
-}
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-.nav-list {
-  display: flex;
-  gap: 20px;
-}
-
-.nav-item {
-  font-weight: 500;
-  transition: color 0.2s ease;
-  padding: 15px;
-  width: var(--font-width);
-  text-decoration: underline var(--color-button) solid 2px;
-}
-.nav-item:hover {
-  color: var(--color-button);
-  text-decoration: underline var(--color-text) solid 2px;
-}
-
-.sub {
-  width: 10;
-  height: 2px;
-  margin: 10px;
-  background-color: var(--color-accent);
-  animation: heartbeat 1.5s infinite;
+main {
+  flex: 1;
 }
 
 .main {
@@ -82,20 +44,139 @@ section {
   margin-top: var(--header-height);
   padding: 15px;
 }
-.banner {
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
   width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px;
 }
+
 .section {
-  background-color: var(--color-white);
+  background-color: var(--color-background);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: 100%;
 }
+
+section {
+  margin-top: 16px;
+}
+
+
+/* 3. TIPOGRAFÍA Y TÍTULOS*/
+
+h1 {
+  color: var(--color-primary);
+}
+
+h2 {
+  color: var(--color-primary);
+  text-decoration: underline var(--color-accent) solid 2px;
+  text-underline-offset: 6px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+h3 {
+  color: var(--color-primary);
+}
+
+h4 {
+  color: var(--color-primary);
+}
+
+p {
+  margin: 10px;
+}
+
+.subtitulo {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+
+/* 4. HEADER Y CABECERA*/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: var(--color-secondary);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.logo {
+  font-weight: bold;
+  margin: 20px;
+}
+
+
+/* 5. NAVEGACIÓN*/
+
+.nav {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links {
+  color: var(--color-primary);
+  text-decoration: underline var(--color-button) solid 2px;
+  padding: 8px 14px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: 15px;
+  width: auto;
+  text-decoration: underline var(--color-button) solid 2px;
+}
+
+.nav-links:hover {
+  color: var(--color-accent);
+  text-decoration: underline var(--color-text) solid 2px;
+  transform: translateY(-2px);
+}
+
+
+/* 6. MENÚ HAMBURGUESA*/
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  position: relative;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-button);
+  /* margin: 1.5px 0; */
+  transition: all 0.3s ease;
+  border-radius: 3px;
+}
+
+
+/* 7. BOTONES Y ELEMENTOS INTERACTIVOS*/
+
 .section-button {
   display: flex;
   padding: 15px;
@@ -110,90 +191,278 @@ section {
   padding: 10px 20px;
   margin: 14px;
   background-color: var(--color-accent);
-  color: var(--color-white);
+  color: var(--color-secondary);
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: var(--font-size);
 }
+
 .button:hover {
   background-color: var(--color-button);
   border: var(--color-accent) solid 3px;
 }
 
-.hamburger {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
+.about-button {
+  display: flex;
+  padding: 15px;
+  margin: 0px;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+
+.btn-toggle {
   border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 14px;
+  background-color: var(--color-accent);
+  color: var(--color-secondary);
   cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: var(--font-size);
+}
+
+
+/* 8. ELEMENTOS DECORATIVOS*/
+
+.sub {
+  height: 2px;
+  margin: 10px;
+  background-color: var(--color-accent);
+  animation: heartbeat 1.5s infinite;
+}
+
+.banner {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.icon-sol {
+  display: none;
+}
+
+.icon-luna {
+  display: inline-block;
+}
+
+
+/* 9. TARJETAS, CAJAS Y LISTAS*/
+
+.card {
+  min-height: 200px;
+  width: auto;
+  padding: 10px;
+  background-color: var(--color-background-card);
+  box-shadow: 0 2px 10px var(--color-shadow);
+  border-radius: 10px;
+  margin: 15px;
+  border-left: var(--color-primary) solid 4px;
+}
+
+.card2 {
+  min-height: 200px;
+  width: 400px;
+  padding: 10px;
+  background-color: var(--color-background);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 15px;
+}
+
+.card-container2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+}
+
+.card-list {
+  list-style: circle;
+  padding-left: 40px;
+  margin: 10px;
+}
+
+.info {
+  margin: 2px;
   padding: 10px;
 }
 
-.hamburger span {
-  width: 25px;
-  height: 3px;
-  background-color: var(--color-button);
+.caja {
+  border: var(--color-text) solid 1px;
+  border-radius: 5px;
 }
+
+.legend {
+  color: var(--color-accent);
+  font-weight: bold;
+}
+
+
+/* 10. FORMULARIOS Y CONTACTO*/
 
 .form {
   border-radius: 10px;
   margin: 20px;
   padding: 15px;
 }
+
 .main-contacto {
   flex: 1;
   margin: 10px;
 }
-.info {
-  margin: 2px;
-  padding: 10px;
-}
-.caja {
-  border: var(--color-text) solid 1px;
-  border-radius: 5px;
-}
-.legend {
-  color: var(--color-accent);
-  font-weight: bold;
+
+
+/*  11. PÁGINA ABOUT */
+
+.selfie {
+  flex-shrink: 0;
+  width: 250px;
+  height: auto;
+  object-fit: cover;
+  margin-left: 20px;
+  border-radius: 10px;
+  border: var(--color-secondary) solid 3px;
 }
 
-@keyframes heartbeat {
-  0% {
+.biografia {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center;
+}
+
+.cabecera.text {
+  display: flex;
+}
+
+#h1About {
+  color: var(--color-primary);
+  text-decoration: underline var(--color-accent) solid 2px;
+  text-underline-offset: 6px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+#h3About {
+  padding-left: 20px;
+}
+
+
+/* 12. FOOTER*/
+
+footer {
+  margin-top: 20px;
+}
+
+
+/* 13. ANIMACIONES*/
+
+/* @keyframes heartbeat { */
+  /* 0% {
     transform: scale(0);
   }
+
   14% {
     transform: scale(0.15);
   }
+
   28% {
     transform: scale(0.2);
   }
+
   42% {
     transform: scale(0.4);
   }
+
   70% {
     transform: scale(0.7);
   }
+
   100% {
     transform: scale(1);
   }
-}
+} */
+
+
+/* 14. DISEÑO RESPONSIVE / MÓVILES*/
 
 @media (max-width: 576px) {
+
+  /* Menú hamburguesa */
+
   .hamburger {
     display: flex;
   }
 
+  /* Menú de navegación desplegable */
+
   .nav {
     position: fixed;
-    top: var(--header-height);
-    left: -100%;
-    width: 100%;
-    background-color: var(--color-white);
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    background-color: var(--color-secondary);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
+    flex-direction: column;
+    padding: 5rem 2rem 2rem 2rem;
+    gap: 1rem;
+    transition: right 0.3s ease;
+    overflow-y: auto;
   }
+
+  .nav.active {
+    right: 0;
+  }
+
+  .nav-links {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* Tarjetas */
+
   .card {
     max-width: 100%;
   }
+
+  .card2 {
+    width: 100%;
+  }
+
+  /* Biografía */
+
+  .biografia {
+    flex-direction: column;
+  }
+
 }
+
+
+/*MODO OSCURO*/
+
+.dark-mode {
+  --color-primary: #A8BDB1;
+  --color-secondary: #292F2D;
+  --color-text: #E5E2DC;
+  --color-button: #A96F58;
+  --color-background: #181C1B;
+  --color-accent: #C58B72;
+  --color-shadow: rgba(152, 202, 150, 0.1);
+  --color-background-card: #3f4442;
+}
+
+.dark-mode .icon-sol {
+  display: inline-block;
+}
+
+.dark-mode .icon-luna {
+  display: none;
+}
+
+
